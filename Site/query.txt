@@ -1,0 +1,6 @@
+Query sublevels:
+
+select * from sub_level as s
+join current_stages as c
+on s.id = c.sublevel_id
+where c.user_id = 1;

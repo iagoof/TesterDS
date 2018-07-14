@@ -1,0 +1,53 @@
+#level-properties {
+    display: inline-block;
+    width: 100%;
+}
+
+.card {
+    background-color: #36404A;
+    height:77vh;    /* 77% height */
+    margin: 0.20rem;
+    text-align: center;
+}
+
+.card-block {
+    padding-bottom: 1rem;
+    height: 100%;
+}
+
+.card-deck {
+    color: white;
+    height: 100%;
+    margin: 0 1.5rem;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    padding-top: 0.7rem;
+}
+
+.java-code {
+    color: #111111;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.875rem;
+    margin: 0.5rem 2.5%;
+    min-height: 65%;
+    overflow-y: scroll;
+    tab-size: 5rem;
+    width: 95%;
+}
+
+#className {
+    display: inline-block;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#arrows {
+    text-align: right;
+    margin-right: 1rem;
+}
+

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('☺'),
+        url(Source+Code+Pro_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevQ.woff */
+        url(Source+Code+Pro_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevTnsUnxg.ttf */
+        url(Source+Code+Pro_400_normal.svg#Source+Code+Pro_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevR&skey=d94d317bc78fd84e&v=v7#SourceCodePro */
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('☺'),
+        url(Source+Sans+Pro_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j.woff */
+        url(Source+Sans+Pro_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7gujVj9w.ttf */
+        url(Source+Sans+Pro_400_normal.svg#Source+Sans+Pro_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7i&skey=1e026b1c27170b9b&v=v11#SourceSansPro */
+}

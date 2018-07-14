@@ -1,0 +1,8 @@
+.checkbox label {
+	padding-left: 1.5em !important;
+}
+
+.errorMessage {
+	text-align: center;
+	color: #dc3545;
+}

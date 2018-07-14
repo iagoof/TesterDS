@@ -1,0 +1,57 @@
+<!-- Image and text -->
+<header id="level-properties">
+  <div class="col-2 col-sm-4 col-md-10 col-lg-10 col-xl-10">
+    <strong>Stage {{currentLevel.subLevels[0].id}}:</strong> {{currentLevel.subLevels[0].description}}
+  </div>
+</header>
+
+<div class="card-deck">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Code Editor</h4>
+        <p class="card-text">Put your <strong>Java Class Code</strong> below:</p>
+        <div class="row">
+          <div class="col-md-9" id="className">
+            <label for="className">Class Name</label>
+            <input type="text" name="className" placeholder={{baseCode[currentIndex].className}} >
+          </div>
+          <div class="arrows">
+            <button type="button" class="btn btn-default btn-xs col-md-1" [disabled]="!isPrevious" (click)="previous()">
+              <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Previous
+            </button>
+            <button type="button" class="btn btn-default btn-xs col-md-1" [disabled]="!isNext" (click)="next()">
+              Next <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+            </button>
+          </div>
+      </div>
+        <textarea [(ngModel)]="baseCode[currentIndex].code" class="java-code col-11 col-sm-11 col-md-11">
+        </textarea>
+        <button type="button" class="btn btn-primary" (click)="modal.open(instrument())">Instrument</button>
+        <bs-modal #myModal>
+          <bs-modal-header>
+              <h4 class="modal-title">Classes Instrumentation</h4>
+          </bs-modal-header>
+          <bs-modal-body>
+            Wait for instrumentation to begin in moments...
+          </bs-modal-body>
+          <bs-modal-footer>
+              <button type="button" class="btn btn-primary" (click)="modal.close()">Ok</button>
+          </bs-modal-footer>
+      </bs-modal>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Control Flow Graph</h4>
+        <p class="card-text">A project's GFC will be generated below.</p>
+        <p class="card-text"><small class="text-muted">Waiting instrumentation.</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Instrumented Code</h4>
+        <p class="card-text">Below you will see the code coverage.</p>
+        <p class="card-text"><small class="text-muted">Waiting instrumentation.</small></p>
+      </div>
+    </div>
+</div>
